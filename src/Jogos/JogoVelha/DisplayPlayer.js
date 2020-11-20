@@ -54,6 +54,17 @@ export default class CompClasse extends Component
     }
 
 
+    reiniciarPag = () => {
+
+            let currentURL = window.location.href;
+            let domain = currentURL.split("/");
+
+              window.location.replace(domain[0] + "#/displayplayer");
+
+              window.location.reload(false);
+
+
+    }
 
 
     zerar = () => {
@@ -69,6 +80,7 @@ export default class CompClasse extends Component
         document.getElementById('b7').innerHTML = "7"
         document.getElementById('b8').innerHTML = "8"
         document.getElementById('b9').innerHTML = "9"
+        vez=""
 }
 
 
@@ -199,68 +211,161 @@ export default class CompClasse extends Component
          }
          else if((this.state.campo4=='X' && this.state.campo5=='X' && this.state.campo6=='X') || ( this.state.campo4=='O' && this.state.campo5=='O' && this.state.campo6=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
             this.zerar()
             
          }
          else if((this.state.campo7=='X' && this.state.campo8=='X' && this.state.campo9=='X') || ( this.state.campo7=='O' && this.state.campo8=='O' && this.state.campo9=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
 
             this.zerar()
             
          }
          else if((this.state.campo1=='X' && this.state.campo4=='X' && this.state.campo7=='X') || ( this.state.campo1=='O' && this.state.campo4=='O' && this.state.campo7=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
             this.zerar()
             
          }
          else if((this.state.campo2=='X' && this.state.campo5=='X' && this.state.campo8=='X') || ( this.state.campo2=='O' && this.state.campo5=='O' && this.state.campo8=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
             this.zerar()
             
          }
          else if((this.state.campo3=='X' && this.state.campo6=='X' && this.state.campo9=='X') || ( this.state.campo3=='O' && this.state.campo6=='O' && this.state.campo9=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
             this.zerar()
             
          }
          else if((this.state.campo1=='X' && this.state.campo5=='X' && this.state.campo9=='X') || ( this.state.campo1=='O' && this.state.campo5=='O' && this.state.campo9=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
             this.zerar()
             
          }
          else if((this.state.campo3=='X' && this.state.campo5=='X' && this.state.campo7=='X') || ( this.state.campo3=='O' && this.state.campo5=='O' && this.state.campo7=='O')){
             this.setState({ganhou:true})
-            alert("Parabens")
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[0]+' !!',
+                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
             this.zerar()
             
          }
-         
+         else if(
+             (this.state.campo1=='X' || this.state.campo1=='O') && 
+             (this.state.campo2=='X' || this.state.campo2=='O') &&
+             (this.state.campo3=='X' || this.state.campo3=='O') &&
+             (this.state.campo4=='X' || this.state.campo4=='O') &&
+             (this.state.campo5=='X' || this.state.campo5=='O') &&
+             (this.state.campo6=='X' || this.state.campo6=='O') &&
+             (this.state.campo7=='X' || this.state.campo7=='O') &&
+             (this.state.campo8=='X' || this.state.campo8=='O') &&
+             (this.state.campo9=='X' || this.state.campo9=='O')
+             
+             ){
+
+                Swal.fire({
+                    title: 'Deu velha ',
+                    text: 'O jogo será reiniciado!',
+                    width: 500,
+                    padding: '2em'
+                  
+                  })
+                this.zerar()
+
+
+             }
 
 
 
     }
 
-   
-    reivindicar = ()=>
-    {
 
-       
-            Swal.fire({
-                
-                text: 'Para de meter o loko, ninguem ganhou ainda!',
-                width: 500,
-                padding: '2em'
-               
-              })
-
-              
-        }
 
 
 
@@ -305,8 +410,9 @@ export default class CompClasse extends Component
                 <div class="d-flex justify-content-between">
                 
                     <a href="#/home" class="text-center btn btn-primary btn-lg" >Sair do jogo</a>
-               
-                    <BotaoCalc valor={this.reivindicar} label='Reivindicar Vitória' classe="revindicar text-center btn btn-success btn-lg"/>
+                    
+                    <BotaoCalc valor={this.reiniciarPag} label='Reiniciar Partida' classe="revindicar text-center btn btn-success btn-lg"/>
+                    
                 </div>
 
                 <h3 className='text-center'>Sua vez <b>{this.verificarVez()}</b></h3>

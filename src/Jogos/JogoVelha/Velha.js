@@ -73,10 +73,16 @@ export default class CompClasse extends Component
           } )
 
 
-         
-       
-
      }
+
+     
+
+
+
+
+
+
+
 
                      
 
