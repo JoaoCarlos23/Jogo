@@ -93,10 +93,10 @@ export default class CompClasse extends Component
     
 
         
-           <div class="container">
+           <div class="container text-center">
                
                <h1 class="text-center">Jogo da Velha</h1><br/>
-
+{/* 
                 <h3>Selecione o modo de jogo:</h3><br/>
 
                 <div class="input-group mb-3">
@@ -114,9 +114,9 @@ export default class CompClasse extends Component
                         </div>
                       </div>
                       <h6 class="tipo">Jogar contra ROBÔ</h6><br/>
-                    </div>
+                    </div> */}
 
-                    <a   onClick={() =>this.gravarJogadores()} class="text-center btn btn-primary btn-lg">JOGAR </a>
+                    <a  onClick={() =>this.gravarJogadores()} class="text-center btn btn-primary btn-lg">JOGAR </a>
 
 
            </div>
