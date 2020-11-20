@@ -3,13 +3,30 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './Calculadora/calculadora.css';
+import './Calculadora/display.css';
+
+
+import Calculadora from './Jogos/app'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  
+   <>
+
+    <Calculadora/>
+
+
+
+
+
+  </>,
   document.getElementById('root')
 );
+
+
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
