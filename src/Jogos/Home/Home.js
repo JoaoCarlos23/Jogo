@@ -14,7 +14,8 @@ export default props => {
             <h1 className='text-center'> Catálogo de jogos</h1>
             {/* <img src="/images/nayan.gif" width="70%" height="70%" /> */}
             <br/>
-                <div class="card cardinho">
+            <div className="row text-center">
+                <div class="card cardinho col-lg-3 col-md-6 col-sm-12 text-center">
                     <img class="card-img-top imagem" src="/images/velha.gif" alt="Card image cap"/>
                     <div class="card-body">
                         <h5 class="card-title">Jogo da velha</h5>
@@ -24,7 +25,7 @@ export default props => {
                         </div>
                     </div>
                 </div>
-
+                </div>
 
         </>
 
