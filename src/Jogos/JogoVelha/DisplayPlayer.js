@@ -184,7 +184,7 @@ export default class CompClasse extends Component
 
     verificaGanhador = () =>{
 
-        if((this.state.campo1=='X' && this.state.campo2=='X' && this.state.campo3=='X') || ( this.state.campo1=='O' && this.state.campo2=='O' && this.state.campo3=='O')){
+        if(this.state.campo1=='X' && this.state.campo2=='X' && this.state.campo3=='X'){  
             
             ganhou = true
             Swal.fire({
@@ -201,15 +201,32 @@ export default class CompClasse extends Component
                 `
               })
 
-
-
-
             this.zerar()
 
             //recuperar nome dos jogadores do localstorage e zerar em seguida
             
+         }else if( this.state.campo1=='O' && this.state.campo2=='O' && this.state.campo3=='O'){
+            ganhou = true
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+
+            this.zerar()
+
          }
-         else if((this.state.campo4=='X' && this.state.campo5=='X' && this.state.campo6=='X') || ( this.state.campo4=='O' && this.state.campo5=='O' && this.state.campo6=='O')){
+
+
+         else if(this.state.campo4=='X' && this.state.campo5=='X' && this.state.campo6=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -227,7 +244,26 @@ export default class CompClasse extends Component
             this.zerar()
             
          }
-         else if((this.state.campo7=='X' && this.state.campo8=='X' && this.state.campo9=='X') || ( this.state.campo7=='O' && this.state.campo8=='O' && this.state.campo9=='O')){
+        else if( this.state.campo4=='O' && this.state.campo5=='O' && this.state.campo6=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+            this.zerar()
+
+        }
+
+         else if(this.state.campo7=='X' && this.state.campo8=='X' && this.state.campo9=='X'){ 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -246,7 +282,26 @@ export default class CompClasse extends Component
             this.zerar()
             
          }
-         else if((this.state.campo1=='X' && this.state.campo4=='X' && this.state.campo7=='X') || ( this.state.campo1=='O' && this.state.campo4=='O' && this.state.campo7=='O')){
+         else if ( this.state.campo7=='O' && this.state.campo8=='O' && this.state.campo9=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+
+            this.zerar()
+
+         }
+         else if(this.state.campo1=='X' && this.state.campo4=='X' && this.state.campo7=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -264,7 +319,24 @@ export default class CompClasse extends Component
             this.zerar()
             
          }
-         else if((this.state.campo2=='X' && this.state.campo5=='X' && this.state.campo8=='X') || ( this.state.campo2=='O' && this.state.campo5=='O' && this.state.campo8=='O')){
+         else if( this.state.campo1=='O' && this.state.campo4=='O' && this.state.campo7=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+            this.zerar()
+         }
+         else if(this.state.campo2=='X' && this.state.campo5=='X' && this.state.campo8=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -282,7 +354,24 @@ export default class CompClasse extends Component
             this.zerar()
             
          }
-         else if((this.state.campo3=='X' && this.state.campo6=='X' && this.state.campo9=='X') || ( this.state.campo3=='O' && this.state.campo6=='O' && this.state.campo9=='O')){
+         else if( this.state.campo2=='O' && this.state.campo5=='O' && this.state.campo8=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+            this.zerar()
+         }
+         else if(this.state.campo3=='X' && this.state.campo6=='X' && this.state.campo9=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -300,7 +389,24 @@ export default class CompClasse extends Component
             this.zerar()
             
          }
-         else if((this.state.campo1=='X' && this.state.campo5=='X' && this.state.campo9=='X') || ( this.state.campo1=='O' && this.state.campo5=='O' && this.state.campo9=='O')){
+         else if( this.state.campo3=='O' && this.state.campo6=='O' && this.state.campo9=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+            this.zerar()
+         }
+         else if(this.state.campo1=='X' && this.state.campo5=='X' && this.state.campo9=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -318,7 +424,24 @@ export default class CompClasse extends Component
             this.zerar()
             
          }
-         else if((this.state.campo3=='X' && this.state.campo5=='X' && this.state.campo7=='X') || ( this.state.campo3=='O' && this.state.campo5=='O' && this.state.campo7=='O')){
+         else if( this.state.campo1=='O' && this.state.campo5=='O' && this.state.campo9=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+            this.zerar()
+         }
+         else if(this.state.campo3=='X' && this.state.campo5=='X' && this.state.campo7=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
@@ -335,6 +458,23 @@ export default class CompClasse extends Component
               })
             this.zerar()
             
+         }
+         else if( this.state.campo3=='O' && this.state.campo5=='O' && this.state.campo7=='O'){
+            this.setState({ganhou:true})
+            Swal.fire({
+                title: 'PARABÉNS '+jogadores[1]+' !!',
+                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                width: 500,
+                padding: '2em',
+                background: '#fff url(/images/back.gif)',
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nayan.gif")
+                  left top
+                  no-repeat
+                `
+              })
+            this.zerar()
          }
          else if(
              (this.state.campo1=='X' || this.state.campo1=='O') && 
