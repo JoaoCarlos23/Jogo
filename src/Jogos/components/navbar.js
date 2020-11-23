@@ -20,9 +20,9 @@ export default props => {
             <li class="nav-item active">
                 <a class="nav-link" href="#/home">Catalogo de Jogos <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            {/* <li class="nav-item">
                 <a class="nav-link" href="#/velha">Jogo da Velha</a>
-            </li>
+            </li> */}
             
             
             </ul>

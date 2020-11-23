@@ -16,6 +16,21 @@ let ganhou = false
 
 var dispo = 0;
 
+var estrategia = false
+var jafoi1 = false
+var jafoi2 = false
+var jafoi3 = false
+var jafoi4 = false
+var jafoi5 = false
+var jafoi6 = false
+var jafoi7 = false
+var jafoi8 = false
+var jafoi9 = false
+var jafoi10 = false
+var jafoi11 = false
+var jafoi12 = false
+var jafoi13 = false
+
 const initialstate={
 
     simbolo: '',
@@ -43,10 +58,12 @@ export default class CompClasse extends Component
         
     }
    
+    
+
     componentDidMount() {
 
       
-        
+      
 
 
 
@@ -54,10 +71,240 @@ export default class CompClasse extends Component
     }
 
 
+    analise = ()=>{
+
+        if(jafoi1==false){
+            if(document.getElementById('b1').innerHTML == "X" && document.getElementById('b2').innerHTML == "X" ){
+                setTimeout(function(){
+                    document.getElementById('b3').innerHTML = "O"
+                    document.getElementById('b3').disabled =true
+                },999);
+                    this.setState({campo3: 'O'})
+                    this.setState({simbolo: 'O'})                      
+            
+                vez=2
+                estrategia=true
+                jafoi1 = true
+
+                return
+
+            }
+        }
+        if(jafoi2==false){
+            if(document.getElementById('b1').innerHTML == "X" && document.getElementById('b4').innerHTML == "X" ){
+                setTimeout(function(){
+                    document.getElementById('b7').innerHTML = "O"
+                    document.getElementById('b7').disabled =true
+                },999);
+                    this.setState({campo7: 'O'})
+                    this.setState({simbolo: 'O'})                      
+            
+                    vez=2
+                    estrategia=true
+                    jafoi2=true
+                    return
+
+            }
+        }
+        if(jafoi3==false){
+                if(document.getElementById('b4').innerHTML == "X" && document.getElementById('b5').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b6').innerHTML = "O"
+                        document.getElementById('b6').disabled =true
+                    },999);
+                        this.setState({campo6: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi3=true
+                        return
+
+                }
+        
+            }
+        if(jafoi4==false){    
+                if(document.getElementById('b8').innerHTML == "X" && document.getElementById('b5').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b2').innerHTML = "O"
+                        document.getElementById('b2').disabled =true
+                    },999);
+                        this.setState({campo2: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi4=true
+                        return
+
+                }
+        
+            }
+        if(jafoi5==false){    
+                if(document.getElementById('b2').innerHTML == "X" && document.getElementById('b5').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b8').innerHTML = "O"
+                        document.getElementById('b8').disabled =true
+                    },999);
+                        this.setState({campo8: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi5=true
+                        return
+
+                }
+            }
+        if(jafoi6==false){
+                if(document.getElementById('b3').innerHTML == "X" && document.getElementById('b5').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b7').innerHTML = "O"
+                        document.getElementById('b7').disabled =true
+                    },999);
+                        this.setState({campo7: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi6=true
+                        return
+
+                }
+            }
+        
+        if(jafoi7==false){
+                if(document.getElementById('b6').innerHTML == "X" && document.getElementById('b5').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b4').innerHTML = "O"
+                        document.getElementById('b4').disabled =true
+                    },999);
+                        this.setState({campo4: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi7 = true
+                        return
+
+                }
+            }
+            if(jafoi8==false){
+                if(document.getElementById('b1').innerHTML == "X" && document.getElementById('b7').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b4').innerHTML = "O"
+                        document.getElementById('b4').disabled =true
+                    },999);
+                        this.setState({campo4: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi8 = true
+                        return
+
+                }
+            }
+            if(jafoi9==false){
+                if(document.getElementById('b2').innerHTML == "X" && document.getElementById('b8').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b5').innerHTML = "O"
+                        document.getElementById('b5').disabled =true
+                    },999);
+                        this.setState({campo5: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi9 = true
+                        return
+
+                }
+            }
+            if(jafoi10==false){
+                if(document.getElementById('b3').innerHTML == "X" && document.getElementById('b9').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b6').innerHTML = "O"
+                        document.getElementById('b6').disabled =true
+                    },999);
+                        this.setState({campo6: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi10 = true
+                        return
+
+                }
+            }
+            if(jafoi11==false){
+                if(document.getElementById('b1').innerHTML == "X" && document.getElementById('b3').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b2').innerHTML = "O"
+                        document.getElementById('b2').disabled =true
+                    },999);
+                        this.setState({campo2: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi11 = true
+                        return
+
+                }
+            }
+            if(jafoi12==false){
+                if(document.getElementById('b4').innerHTML == "X" && document.getElementById('b6').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b5').innerHTML = "O"
+                        document.getElementById('b5').disabled =true
+                    },999);
+                        this.setState({campo5: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi12 = true
+                        return
+
+                }
+            }
+            if(jafoi13==false){
+                if(document.getElementById('b7').innerHTML == "X" && document.getElementById('b9').innerHTML == "X" ){
+                    setTimeout(function(){
+                        document.getElementById('b8').innerHTML = "O"
+                        document.getElementById('b8').disabled =true
+                    },999);
+                        this.setState({campo8: 'O'})
+                        this.setState({simbolo: 'O'})                      
+                
+                        vez=2
+                        estrategia=true
+                        jafoi13 = true
+                        return
+
+                }
+            }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
     jogadamaquina = ()=>{
+
+        
 
             if(vez==1){
 
+                
                 document.getElementById('b1').disabled =true
                 document.getElementById('b2').disabled =true
                 document.getElementById('b3').disabled =true
@@ -67,92 +314,177 @@ export default class CompClasse extends Component
                 document.getElementById('b7').disabled =true
                 document.getElementById('b8').disabled =true
                 document.getElementById('b9').disabled =true
+               this.verificarVez()
                     //esperar um tempo
 
                     var delay=1000; //1 seconds
                     setTimeout(function(){
                             console.log('pensando....');
-                            //your code to be executed after 1 seconds
-                            document.getElementById('b1').disabled =false
-                            document.getElementById('b2').disabled =false
-                            document.getElementById('b3').disabled =false
-                            document.getElementById('b4').disabled =false
-                            document.getElementById('b5').disabled =false
-                            document.getElementById('b6').disabled =false
-                            document.getElementById('b7').disabled =false
-                            document.getElementById('b8').disabled =false
-                            document.getElementById('b9').disabled =false
 
+                            if(document.getElementById('b1').innerHTML != "1"){
+                                document.getElementById('b1').disabled =true
+                            }else{
+                                document.getElementById('b1').disabled =false
+                            }
+                            if(document.getElementById('b2').innerHTML != "2"){
+                                document.getElementById('b2').disabled =true
+                            }
+                            else{
+                                document.getElementById('b2').disabled =false
+                            }
+                            if(document.getElementById('b3').innerHTML != "3"){
+                                document.getElementById('b3').disabled =true
+                            }
+                            else{
+                                document.getElementById('b3').disabled =false
+                            }
+                            if(document.getElementById('b4').innerHTML != "4"){
+                                document.getElementById('b4').disabled =true
+                            }
+                            else{
+                                document.getElementById('b4').disabled =false
+                            }
+                            if(document.getElementById('b5').innerHTML != "5"){
+                                document.getElementById('b5').disabled =true
+                            }
+                            else{
+                                document.getElementById('b5').disabled =false
+                            }
+                            if(document.getElementById('b6').innerHTML != "6"){
+                                document.getElementById('b6').disabled =true
+                            }
+                            else{
+                                document.getElementById('b6').disabled =false
+                            }
+                            if(document.getElementById('b7').innerHTML != "7"){
+                                document.getElementById('b7').disabled =true
+                            }
+                            else{
+                                document.getElementById('b7').disabled =false
+                            }
+                            if(document.getElementById('b8').innerHTML != "8"){
+                                document.getElementById('b8').disabled =true
+                            }
+                            else{
+                                document.getElementById('b8').disabled =false
+                            }
+                            if(document.getElementById('b9').innerHTML != "9"){
+                                document.getElementById('b9').disabled =true
+                            }
+                            else{
+                                document.getElementById('b9').disabled =false
+                            }
+
+                          
                             
-                    },delay);
+                    },1000);
 
+                   //modulo de analise da jogada do robo(desabilite se tiver dificil)
+
+                    this.analise()
                     
-                    if(document.getElementById('b1').innerHTML == "1"){
-                        document.getElementById('b1').innerHTML = "O"
-                        this.setState({campo1: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b1').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b9').innerHTML == "9"){
-                        document.getElementById('b9').innerHTML = "O"
-                        this.setState({campo9: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b9').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b7').innerHTML == "7"){
-                        document.getElementById('b7').innerHTML = "O"
-                        this.setState({campo7: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b7').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b3').innerHTML == "3"){
-                        document.getElementById('b3').innerHTML = "O"
-                        this.setState({campo3: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b3').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b8').innerHTML == "8"){
-                        document.getElementById('b8').innerHTML = "O"
-                        this.setState({campo8: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b8').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b4').innerHTML == "4"){
-                        document.getElementById('b4').innerHTML = "O"
-                        this.setState({campo4: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b4').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b2').innerHTML == "2"){
-                        document.getElementById('b2').innerHTML = "O"
-                        this.setState({campo2: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b2').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b6').innerHTML == "6"){
-                        document.getElementById('b6').innerHTML = "O"
-                        this.setState({campo6: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b6').disabled =true
-                        vez=2
-                    }
-                    else if(document.getElementById('b5').innerHTML == "5"){
-                        document.getElementById('b5').innerHTML = "O"
-                        this.setState({campo5: 'O'})
-                        this.setState({simbolo: 'O'})                      
-                        document.getElementById('b5').disabled =true
-                        vez=2
-                    }
+                    if(estrategia==false){
+                            if(document.getElementById('b1').innerHTML == "1"){
+                                setTimeout(function(){
+                                        document.getElementById('b1').innerHTML = "O"
+                                        document.getElementById('b1').disabled =true
+                                },999);
+                                this.setState({campo1: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                            
+                                vez=2
+                            }
+                            else if(document.getElementById('b9').innerHTML == "9"){
+                                setTimeout(function(){
+                                    document.getElementById('b9').innerHTML = "O"
+                                    document.getElementById('b9').disabled =true
+                            },999);
+                                
+                                this.setState({campo9: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                                
+                                vez=2
+                            }
+                            else if(document.getElementById('b7').innerHTML == "7"){
+                                setTimeout(function(){
+                                    document.getElementById('b7').innerHTML = "O"
+                                    document.getElementById('b7').disabled =true
+                            },999);
+                            
+                                this.setState({campo7: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                                
+                                vez=2
+                            }
+                            else if(document.getElementById('b3').innerHTML == "3"){
+                                setTimeout(function(){
+                                    document.getElementById('b3').innerHTML = "O"
+                                    document.getElementById('b3').disabled =true
+                            },999);
+                                
+                                this.setState({campo3: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                                
+                                vez=2
+                            }
+                            else if(document.getElementById('b8').innerHTML == "8"){
+                                setTimeout(function(){
+                                    document.getElementById('b8').innerHTML = "O"
+                                    document.getElementById('b8').disabled =true
+                            },999);
+                                
+                                this.setState({campo8: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                            
+                                vez=2
+                            }
+                            else if(document.getElementById('b4').innerHTML == "4"){
+                                setTimeout(function(){
+                                    document.getElementById('b4').innerHTML = "O"
+                                    document.getElementById('b4').disabled =true
+                            },999);
+                            
+                                this.setState({campo4: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                                
+                                vez=2
+                            }
+                            else if(document.getElementById('b2').innerHTML == "2"){
+                                setTimeout(function(){
+                                    document.getElementById('b2').innerHTML = "O"
+                                    document.getElementById('b2').disabled =true
+                            },999);
+                            
+                                this.setState({campo2: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                                
+                                vez=2
+                            }
+                            else if(document.getElementById('b6').innerHTML == "6"){
+                                setTimeout(function(){
+                                    document.getElementById('b6').innerHTML = "O"
+                                    document.getElementById('b6').disabled =true
+                            },999);
+                                
+                                this.setState({campo6: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                            
+                                vez=2
+                            }
+                            else if(document.getElementById('b5').innerHTML == "5"){
+                                setTimeout(function(){
+                                    document.getElementById('b5').innerHTML = "O"
+                                    document.getElementById('b5').disabled =true
+                            },999);
+                            
+                                this.setState({campo5: 'O'})
+                                this.setState({simbolo: 'O'})                      
+                                
+                                vez=2
+                            }
 
               
-                
+                    }
 
 
 
@@ -171,7 +503,7 @@ export default class CompClasse extends Component
             let currentURL = window.location.href;
             let domain = currentURL.split("/");
 
-              window.location.replace(domain[0] + "#/displayplayer");
+              window.location.replace(domain[0] + "#/displaybot");
 
               window.location.reload(false);
 
@@ -183,6 +515,7 @@ export default class CompClasse extends Component
         
         this.setState({...initialstate})
 
+        vez=""
         document.getElementById('b1').innerHTML = "1"
         document.getElementById('b2').innerHTML = "2"
         document.getElementById('b3').innerHTML = "3"
@@ -192,7 +525,7 @@ export default class CompClasse extends Component
         document.getElementById('b7').innerHTML = "7"
         document.getElementById('b8').innerHTML = "8"
         document.getElementById('b9').innerHTML = "9"
-        vez=""
+        
         document.getElementById('b1').disabled =false
         document.getElementById('b2').disabled =false
         document.getElementById('b3').disabled =false
@@ -203,9 +536,21 @@ export default class CompClasse extends Component
         document.getElementById('b8').disabled =false
         document.getElementById('b9').disabled =false
 
+        estrategia=false
 
-
-
+        jafoi1 = false
+        jafoi2 = false
+         jafoi3 = false
+        jafoi4 = false
+         jafoi5 = false
+         jafoi6 = false
+         jafoi7 = false
+         jafoi8= false
+         jafoi9 = false
+         jafoi10 = false
+          jafoi11 = false
+            jafoi12 = false
+            jafoi13 = false
 }
 
 
@@ -214,53 +559,63 @@ export default class CompClasse extends Component
      
     mudaSimbolo =(num) => {
         
-            
+             vez=1;
+            estrategia=false
              document.getElementById(num).innerHTML = "X"
              this.setState({simbolo: 'X'})
              switch(num){
                 case "b1":
                     this.setState({campo1: 'X'})
                     document.getElementById('b1').disabled =true
+                   
                     vez=1;
                     break;
                 case "b2":
                         this.setState({campo2: 'X'})
                         document.getElementById('b2').disabled =true
+                        
                         vez=1;
                         break;
                 case "b3":
                     this.setState({campo3: 'X'})
                     document.getElementById('b3').disabled =true
+                    
                     vez=1;
                     break;
                 case "b4":
                     this.setState({campo4: 'X'})
                     document.getElementById('b4').disabled =true
+                    
                     vez=1;
                     break;
                 case "b5":
                         this.setState({campo5: 'X'})
                         document.getElementById('b5').disabled =true
+                        
                         vez=1;
                         break;
                 case "b6":
                     this.setState({campo6: 'X'})
                     document.getElementById('b6').disabled =true
+                    
                     vez=1;
                     break;
                 case "b7":
                     this.setState({campo7: 'X'})
                     document.getElementById('b7').disabled =true
+                    
                     vez=1;
                     break;
                 case "b8":
                         this.setState({campo8: 'X'})
                         document.getElementById('b8').disabled =true
+                       
                         vez=1;
                         break;
                 case "b9":
                     this.setState({campo9: 'X'})
                     document.getElementById('b9').disabled =true
+                    
                     vez=1;
                     break;
 
@@ -275,7 +630,7 @@ export default class CompClasse extends Component
 
          this.verificaGanhador()
         
-
+         estrategia=false
 
         return
     }
@@ -288,8 +643,9 @@ export default class CompClasse extends Component
             ganhou = true
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -307,20 +663,21 @@ export default class CompClasse extends Component
          }else if( this.state.campo1=='O' && this.state.campo2=='O' && this.state.campo3=='O'){
             ganhou = true
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
+                
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
 
             this.zerar()
+            
 
          }
 
@@ -329,8 +686,9 @@ export default class CompClasse extends Component
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -339,6 +697,12 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
             
@@ -346,19 +710,20 @@ export default class CompClasse extends Component
         else if( this.state.campo4=='O' && this.state.campo5=='O' && this.state.campo6=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
+            
 
         }
 
@@ -366,8 +731,9 @@ export default class CompClasse extends Component
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -376,36 +742,45 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
 
+            this.zerar()
             this.zerar()
             
          }
          else if ( this.state.campo7=='O' && this.state.campo8=='O' && this.state.campo9=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
 
             this.zerar()
+            
 
          }
          else if(this.state.campo1=='X' && this.state.campo4=='X' && this.state.campo7=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -414,33 +789,42 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
+            this.zerar()
             this.zerar()
             
          }
          else if( this.state.campo1=='O' && this.state.campo4=='O' && this.state.campo7=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
+           
          }
          else if(this.state.campo2=='X' && this.state.campo5=='X' && this.state.campo8=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -449,33 +833,42 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
+            this.zerar()
             this.zerar()
             
          }
          else if( this.state.campo2=='O' && this.state.campo5=='O' && this.state.campo8=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
+            
          }
          else if(this.state.campo3=='X' && this.state.campo6=='X' && this.state.campo9=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -484,33 +877,42 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
+            this.zerar()
             this.zerar()
             
          }
          else if( this.state.campo3=='O' && this.state.campo6=='O' && this.state.campo9=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
+            
          }
          else if(this.state.campo1=='X' && this.state.campo5=='X' && this.state.campo9=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -519,33 +921,42 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
+            this.zerar()
             this.zerar()
             
          }
          else if( this.state.campo1=='O' && this.state.campo5=='O' && this.state.campo9=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
+            
          }
          else if(this.state.campo3=='X' && this.state.campo5=='X' && this.state.campo7=='X') { 
             this.setState({ganhou:true})
             Swal.fire({
                 title: 'PARABÉNS '+jogadores[0]+' !!',
-                text: 'Moscou demais em '+jogadores[1]+'zeira KKKKKKKKKKK',
+                text: 'Você derrotou o brabo!!',
                 width: 500,
+                confirmButtonText: `Ok`,
                 padding: '2em',
                 background: '#fff url(/images/back.gif)',
                 backdrop: `
@@ -554,26 +965,34 @@ export default class CompClasse extends Component
                   left top
                   no-repeat
                 `
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
+            this.zerar()
             this.zerar()
             
          }
          else if( this.state.campo3=='O' && this.state.campo5=='O' && this.state.campo7=='O'){
             this.setState({ganhou:true})
             Swal.fire({
-                title: 'PARABÉNS '+jogadores[1]+' !!',
-                text: 'Moscou demais em '+jogadores[0]+'zeira KKKKKKKKKKK',
+                title: 'Você perdeu pro Robô KKKKKKK',
                 width: 500,
-                padding: '2em',
-                background: '#fff url(/images/back.gif)',
-                backdrop: `
-                  rgba(0,0,123,0.4)
-                  url("/images/nayan.gif")
-                  left top
-                  no-repeat
-                `
+                
+                confirmButtonText: `Ok`
+                
+              }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                  
+                    this.reiniciarPag()
+                } 
               })
             this.zerar()
+            
          }
          else if(
              (this.state.campo1=='X' || this.state.campo1=='O') && 
@@ -591,10 +1010,18 @@ export default class CompClasse extends Component
                 Swal.fire({
                     title: 'Deu velha ',
                     text: 'O jogo será reiniciado!',
+                    confirmButtonText: `Ok`,
                     width: 500,
                     padding: '2em'
                   
+                  }).then((result) => {
+                    /* Read more about isConfirmed, isDenied below */
+                    if (result.isConfirmed) {
+                      
+                        this.reiniciarPag()
+                    } 
                   })
+                this.zerar()
                 this.zerar()
 
 
@@ -655,7 +1082,7 @@ export default class CompClasse extends Component
                     
                 </div>
 
-                <h3 className='text-center'>Vez do <b>{this.verificarVez()}</b></h3>
+                {/* <h3 className='text-center'>Vez do <b>{this.verificarVez()}</b></h3> */}
                 <div class="grupobotoes">                
                             <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
                                 <div class="btn-group btn-group-lg mr-2" role="group" aria-label="First group">

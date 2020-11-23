@@ -37,6 +37,8 @@ export default class CompClasse extends Component
         let checkate20 = document.getElementById('pessoas')
         let checkate40 = document.getElementById('maquina')
 
+        checkate20.checked=true
+
         checkate20.addEventListener('change',function() {                
             checkate20.checked=true;
             checkate40.checked=false;
