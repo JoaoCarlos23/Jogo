@@ -1,7 +1,7 @@
 
 
 import React, {Component} from 'react';
-import './DisplayPlayer.css'
+import './DisplayBot.css'
 import BotaoCalc from '../components/Botao'
 import Swal from 'sweetalert2';
 
