@@ -1074,13 +1074,13 @@ export default class CompClasse extends Component
                 <br/>
                 {this.jogadamaquina()}
                     {this.verificaGanhador()}
-                <div class="d-flex justify-content-between">
                 
-                    <a href="#/home" class="text-center btn btn-primary btn-lg" >Sair do jogo</a>
+                
+                    <a href="#/home" class="text-center btn btn-primary btn-lg col-lg-3 col-md-6 col-sm-12 text-center" >Sair do jogo</a>
                     
-                    <BotaoCalc valor={this.reiniciarPag} label='Reiniciar Partida' classe="revindicar text-center btn btn-success btn-lg"/>
+                    {/* <BotaoCalc valor={this.reiniciarPag} label='Reiniciar Partida' classe="revindicar text-center btn btn-success btn-lg col-lg-3 col-md-6 col-sm-12"/> */}
                     
-                </div>
+                
 
                 {/* <h3 className='text-center'>Vez do <b>{this.verificarVez()}</b></h3> */}
                 <div class="grupobotoes">                
