@@ -56,6 +56,7 @@ export default class CompClasse extends Component
 
     reiniciarPag = () => {
 
+            this.zerar()
             let currentURL = window.location.href;
             let domain = currentURL.split("/");
 
@@ -81,6 +82,19 @@ export default class CompClasse extends Component
         document.getElementById('b8').innerHTML = "8"
         document.getElementById('b9').innerHTML = "9"
         vez=""
+        document.getElementById('b1').disabled =false
+        document.getElementById('b2').disabled =false
+        document.getElementById('b3').disabled =false
+        document.getElementById('b4').disabled =false
+        document.getElementById('b5').disabled =false
+        document.getElementById('b6').disabled =false
+        document.getElementById('b7').disabled =false
+        document.getElementById('b8').disabled =false
+        document.getElementById('b9').disabled =false
+
+
+
+
 }
 
 
@@ -98,30 +112,39 @@ export default class CompClasse extends Component
              switch(num){
                 case "b1":
                     this.setState({campo1: 'X'})
+                    document.getElementById('b1').disabled =true
                     break;
                 case "b2":
                         this.setState({campo2: 'X'})
+                        document.getElementById('b2').disabled =true
                         break;
                 case "b3":
                     this.setState({campo3: 'X'})
+                    document.getElementById('b3').disabled =true
                     break;
                 case "b4":
                     this.setState({campo4: 'X'})
+                    document.getElementById('b4').disabled =true
                     break;
                 case "b5":
                         this.setState({campo5: 'X'})
+                        document.getElementById('b5').disabled =true
                         break;
                 case "b6":
                     this.setState({campo6: 'X'})
+                    document.getElementById('b6').disabled =true
                     break;
                 case "b7":
                     this.setState({campo7: 'X'})
+                    document.getElementById('b7').disabled =true
                     break;
                 case "b8":
                         this.setState({campo8: 'X'})
+                        document.getElementById('b8').disabled =true
                         break;
                 case "b9":
                     this.setState({campo9: 'X'})
+                    document.getElementById('b9').disabled =true
                     break;
 
                 default:
@@ -139,30 +162,39 @@ export default class CompClasse extends Component
             switch(num){
                 case "b1":
                     this.setState({campo1: 'O'})
+                    document.getElementById('b1').disabled =true
                     break;
                 case "b2":
                         this.setState({campo2: 'O'})
+                        document.getElementById('b2').disabled =true
                         break;
                 case "b3":
                     this.setState({campo3: 'O'})
+                    document.getElementById('b3').disabled =true
                     break;
                 case "b4":
                     this.setState({campo4: 'O'})
+                    document.getElementById('b4').disabled =true
                     break;
                 case "b5":
                         this.setState({campo5: 'O'})
+                        document.getElementById('b5').disabled =true
                         break;
                 case "b6":
                     this.setState({campo6: 'O'})
+                    document.getElementById('b6').disabled =true
                     break;
                 case "b7":
                     this.setState({campo7: 'O'})
+                    document.getElementById('b7').disabled =true
                     break;
                 case "b8":
                         this.setState({campo8: 'O'})
+                        document.getElementById('b8').disabled =true
                         break;
                 case "b9":
                     this.setState({campo9: 'O'})
+                    document.getElementById('b9').disabled =true
                     break;
 
                 default:

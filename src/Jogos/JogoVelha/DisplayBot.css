@@ -1,0 +1,81 @@
+
+
+.grupobotoes{
+
+    margin-left: 40%;
+    margin-top: 7%;
+    
+    }
+    
+    .revindicar{
+    
+        width: 18% !important;
+        height: 10% !important;
+        font-size: larger!important
+    }
+    
+    .botao{
+    
+        width: 80px;
+        height: 80px;
+        font-size: 100px;
+    }
+    
+    #b1{
+    
+        border-bottom: solid 2px black;
+        border-right: solid 3px black;
+        font-size: 40px;
+    }
+    #b2{
+    
+        border-bottom: solid 2px black;
+        border-right: solid 3px black;
+        font-size: 40px;
+    }
+    #b3{
+    
+        border-bottom: solid 2px black;
+        font-size: 40px;
+       
+    }
+    #b4{
+    
+        border-bottom: solid 2px black;
+        border-right: solid 3px black;
+        font-size: 40px;
+    }
+    #b5{
+    
+        border-bottom: solid 2px black;
+        border-right: solid 3px black;
+        font-size: 40px;
+    }
+    #b6{
+    
+        border-bottom: solid 2px black;
+        font-size: 40px;
+       
+    }
+    #b7{
+    
+        border-bottom: solid 2px black;
+        border-right: solid 3px black;
+        font-size: 40px;
+    }
+    #b8{
+    
+        border-bottom: solid 2px black;
+        border-right: solid 3px black;
+        font-size: 40px;
+    }
+    #b9{
+    
+        border-bottom: solid 2px black;
+        font-size: 40px;
+       
+    }
+    
+    
+    
+
